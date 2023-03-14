@@ -1,9 +1,9 @@
 export default{
     data(){
         return {
-            basico: "Acotar",
-            intermedio: "Trono de cristal",
-            avanzado:"Crescent City",
+            basico: `<strong style="color:green;">Acotar</strong>`,
+            intermedio: `<strong style="color:blue;">Trono de cristal</strong>`,
+            avanzado:`<strong style="color:red;">Crescent city</strong>`,
         }
     }
 }
