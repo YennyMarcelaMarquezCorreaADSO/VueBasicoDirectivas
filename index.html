@@ -6,15 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css"></link>
     <script src="app.js" type="module"></script>
 </head>
 
 <body>
     
     <div id="app">
-        <input type="text" v-model="mensaje">
-        <h1>{{mensaje}}</h1>
-        <strong v-text="mensaje"></strong>
+        <label for="">Zona Franja:<strong>Campus</strong> </label>
+        <div>
+            <input type="radio" v-model="centinela" v-bind:value="true"> Ver 
+            <input type="radio" v-model="centinela" v-bind:value="false"> Ocultar
+        </div>
+        <div v-show="centinela" class="infor">Los mejores programadores de colombia</div>
     </div>
 
 </body>
