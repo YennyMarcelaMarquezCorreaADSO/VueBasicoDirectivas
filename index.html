@@ -13,11 +13,20 @@
 <body>
     
     <div id="app">
-        <input type="text" v-model="opcion">
-        <div v-if="opcion==`Acotar`" v-html="mensaje1"></div>
-        <div v_else_if="opcion==`Trono de cristal`" v-html="mensaje2"></div>
-        <div v-else-if="opcion==`Crescent city`" v-html="mensaje3"></div>
-        <div v-else v-html="mensaje4" class="error"></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Libros</th>
+                </tr>
+            </thead>
+            <tbody v-for="(val, id) in lista" :key="id">
+                <tr>
+                    <td v-text="id"></td>
+                    <td v-text="val"></td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
 </body>

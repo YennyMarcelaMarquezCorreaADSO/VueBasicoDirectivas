@@ -1,7 +1,4 @@
-.error{
-    background: red;
-    color: white;
-    font-family: sans-serif;
-    padding: 4rem;
-    border-radius: 2rem;
+th, td{
+    border: solid #000;
+    text-align: center;
 }
