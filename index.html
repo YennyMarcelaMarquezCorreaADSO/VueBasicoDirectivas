@@ -13,12 +13,11 @@
 <body>
     
     <div id="app">
-        <label for="">Zona Franja:<strong>Campus</strong> </label>
-        <div>
-            <input type="radio" v-model="centinela" v-bind:value="true"> Ver 
-            <input type="radio" v-model="centinela" v-bind:value="false"> Ocultar
-        </div>
-        <div v-show="centinela" class="infor">Los mejores programadores de colombia</div>
+        <input type="text" v-model="opcion">
+        <div v-if="opcion==`Acotar`" v-html="mensaje1"></div>
+        <div v_else_if="opcion==`Trono de cristal`" v-html="mensaje2"></div>
+        <div v-else-if="opcion==`Crescent city`" v-html="mensaje3"></div>
+        <div v-else v-html="mensaje4" class="error"></div>
     </div>
 
 </body>

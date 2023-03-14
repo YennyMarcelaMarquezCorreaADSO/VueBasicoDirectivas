@@ -1,7 +1,7 @@
-.infor{
-    background-color: rgb(167, 118, 167);
-    color: #fff;
+.error{
+    background: red;
+    color: white;
     font-family: sans-serif;
-    padding: 3rem;
+    padding: 4rem;
     border-radius: 2rem;
 }
